@@ -17,7 +17,6 @@ use yuncms\tag\models\Tag;
 use yuncms\user\models\User;
 use yuncms\doing\models\Doing;
 use yuncms\space\jobs\VisitJob;
-use yuncms\space\models\Visit;
 
 /**
  * SpaceController shows users space.

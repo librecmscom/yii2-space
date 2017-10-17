@@ -9,6 +9,7 @@ namespace yuncms\space\models;
 
 use Yii;
 use yii\db\ActiveRecord;
+use yuncms\user\models\User;
 
 /**
  * This is the model class for table "visit".

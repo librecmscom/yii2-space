@@ -9,7 +9,6 @@ namespace yuncms\space\jobs;
 use Yii;
 use yii\base\Object;
 use yii\queue\RetryableJob;
-use yuncms\user\models\User;
 use yuncms\user\models\Extend;
 use yuncms\space\models\Visit;
 
