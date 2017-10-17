@@ -10,17 +10,17 @@ use yuncms\user\models\User;
  * @var  User $model
  */
 if (!Yii::$app->user->isGuest && Yii::$app->user->id == $model->id) {//Me
-    $who = Yii::t('user', 'My');
+    $who = Yii::t('space', 'My');
 } else {
     $who = Html::encode($model->username);
 }
 $this->context->layout = 'space';
-$this->title = Yii::t('user', '{who} Page', [
+$this->title = Yii::t('space', '{who} Page', [
     'who' => $who,
 ]);
 $this->params['user'] = $model;
 ?>
-<h2 class="h4"><?= Yii::t('user', 'Latest Activities') ?></h2>
+<h2 class="h4"><?= Yii::t('space', 'Latest Activities') ?></h2>
 <div class="stream-doing clearfix">
     <?= ListView::widget([
         'dataProvider' => $dataProvider,
