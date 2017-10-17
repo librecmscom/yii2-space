@@ -34,7 +34,7 @@
         "sourceLanguage": "en-US",
         "basePath": "@yuncms/space/messages"
       },
-      "migrationNamespace": "@yuncms/space/migrations",
+      "migrationNamespace": "yuncms\\space\\migrations",
       "backend": {
         "class": "yuncms\\space\\backend\\Module"
       },
