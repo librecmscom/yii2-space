@@ -1,0 +1,48 @@
+{
+  "name": "yuncms/yii2-space",
+  "description": "space",
+  "keywords": [
+    "yii2",
+    "space"
+  ],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "support": {
+    "source": "https://github.com/yuncms/yii2-space"
+  },
+  "authors": [
+    {
+      "name": "Xu TL",
+      "email": "xutongle@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.6",
+    "yiisoft/yii2-queue": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yuncms\\space\\": ""
+    }
+  },
+  "extra": {
+    "yuncms": {
+      "name": "space",
+      "i18n": {
+        "class": "yii\\i18n\\PhpMessageSource",
+        "sourceLanguage": "en-US",
+        "basePath": "@yuncms/space/messages"
+      },
+      "migrationNamespace": "@yuncms/space/migrations",
+      "backend": {
+        "class": "yuncms\\space\\backend\\Module"
+      },
+      "frontend": {
+        "class": "yuncms\\space\\frontend\\Module"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  }
+}
